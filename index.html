@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede Social</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Rede Social</h1>
+
+    <form id="postForm">
+        <textarea id="postText" placeholder="Digite seu post aqui..."></textarea><br>
+        <input type="url" id="postImage1" placeholder="URL da imagem 1"><br>
+        <input type="url" id="postImage2" placeholder="URL da imagem 2"><br>
+        <input type="url" id="postImage3" placeholder="URL da imagem 3"><br>
+        <select id="postCategory">
+            <option value="geral">Geral</option>
+            <option value="noticias">Notícias</option>
+            <option value="esportes">Esportes</option>
+            <option value="entretenimento">Entretenimento</option>
+        </select><br>
+        <button type="submit">Criar Post</button>
+    </form>
+
+    <select id="filterCategory">
+        <option value="todas">Todas</option>
+        <option value="geral">Geral</option>
+        <option value="noticias">Notícias</option>
+        <option value="esportes">Esportes</option>
+        <option value="entretenimento">Entretenimento</option>
+    </select>
+
+    <div id="postsContainer"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
